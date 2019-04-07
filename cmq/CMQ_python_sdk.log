@@ -1,0 +1,128 @@
+[2018-10-04 20:19:20] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [31496] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=118026421&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538655560&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=PNW5TFj0Vg0Dr%2FiPH0TGmQh1CSM%3D&Action=CreateQueue&SecretId=%E6%82%A8%E7%9A%84secretId&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:22:08] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [45468] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=1824186774&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538655728&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=slQmyoXsNOMn0zQr1GRn68D0N4A%3D&Action=CreateQueue&SecretId=+AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT+&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:22:08] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [45468] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:22:08 GMT
+content-length: 137
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":4000,"clientRequestId":0,"message":"(10350)parameter SecretId value or length is out of range","requestId":"5819776624847687765"}
+
+[2018-10-04 20:23:04] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [52412] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=927023154&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538655784&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=fG41GgkOl4VpL94ZRLBEJzHgkXc%3D&Action=CreateQueue&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [52412] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:23:04 GMT
+content-length: 104
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"8722909534926169328","queueId":"queue-67ov98ed"}
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_client.py:145] [52412] CreateQueue RequestId:8722909534926169328 QueueName:MySampleQueue QueueId:queue-67ov98ed
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [52412] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=516702573&RequestClient=SDK_Python_1.3&Signature=sai8%2BE9EoUcm39OPqpuDw8ABpIw%3D&SignatureMethod=HmacSHA1&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&Timestamp=1538655785&Action=ListQueue
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [52412] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:23:04 GMT
+content-length: 267
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"8723191009264139630","totalCount":3,"queueList":[{"queueId":"queue-67ov98ed","queueName":"MySampleQueue"},{"queueId":"queue-iijjtd9d","queueName":"topicTest"},{"queueId":"queue-4dr4c759","queueName":"xlwwork"}]}
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_client.py:162] [52412] ListQueue RequestId:8723191009264139630 QueueTotalCount:3
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [52412] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=597917745&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538655785&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=Orp5yRYkIDS%2BhFAze6BO2ND2qVA%3D&Action=SetQueueAttributes&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [52412] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:23:04 GMT
+content-length: 194
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"8723191009264139697","maxMsgHeapNum":10000000,"maxMsgSize":1024,"msgRetentionSeconds":3600,"pollingWaitSeconds":10,"visibilityTimeout":10}
+
+[2018-10-04 20:23:05] [CMQ_python_sdk] [DEBUG] [cmq_client.py:182] [52412] SetQueueAttributes RequestId:8723191009264139697 QueueName:MySampleQueue
+[2018-10-04 20:34:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [49932] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=305167231&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538656493&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=VH6FXXWQaY7Br16PnxI7hFljlWI%3D&Action=CreateQueue&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:34:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [49932] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:34:52 GMT
+content-length: 111
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":4460,"clientRequestId":0,"message":"(10210)queue is already existed","requestId":"5033335539986288641"}
+
+[2018-10-04 20:35:10] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [50832] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=1834640514&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538656510&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=Th%2FHpMlXlI1uQh2Pb0z5dWs2UnE%3D&Action=CreateQueue&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:35:11] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [50832] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:35:10 GMT
+content-length: 213
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":6040,"clientRequestId":0,"message":"(10660)it will take some time to release resources of previous queue before you create a new one with the same name, please try later","requestId":"3552214213248042450"}
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [48428] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=28210726&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538656553&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=%2FfRtxiT0TKnEPWZC1Hy%2BAulBVyU%3D&Action=CreateQueue&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [48428] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:35:53 GMT
+content-length: 103
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"586875333376262079","queueId":"queue-r2elg4dh"}
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_client.py:145] [48428] CreateQueue RequestId:586875333376262079 QueueName:MySampleQueue QueueId:queue-r2elg4dh
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [48428] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=1080275083&RequestClient=SDK_Python_1.3&Signature=n37pVVpKUkYuG7Sr4fUE2nexWEE%3D&SignatureMethod=HmacSHA1&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&Timestamp=1538656553&Action=ListQueue
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [48428] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:35:53 GMT
+content-length: 266
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"587156807605551850","totalCount":3,"queueList":[{"queueId":"queue-r2elg4dh","queueName":"MySampleQueue"},{"queueId":"queue-iijjtd9d","queueName":"topicTest"},{"queueId":"queue-4dr4c759","queueName":"xlwwork"}]}
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_client.py:162] [48428] ListQueue RequestId:587156807605551850 QueueTotalCount:3
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:68] [48428] SendRequest Method: POST
+Uri: /v2/index.php
+Header: Connection: Keep-Alive
+Data: Nonce=1559819136&maxMsgSize=1024&rewindSeconds=0&pollingWaitSeconds=10&Timestamp=1538656553&SignatureMethod=HmacSHA1&RequestClient=SDK_Python_1.3&msgRetentionSeconds=3600&Signature=kXGGf6i0zP7%2FyK740MJVxar6als%3D&Action=SetQueueAttributes&SecretId=AKID2ua4MRFxPerreERnlW5ScZKsDakhMgdT&visibilityTimeout=10&queueName=MySampleQueue
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_http.py:99] [48428] GetResponse Status: 200
+Header: date: Thu, 04 Oct 2018 12:35:53 GMT
+content-length: 193
+content-type: application/json
+connection: keep-alive
+server: nginx
+Data: {"code":0,"clientRequestId":0,"message":"","requestId":"587156807605551940","maxMsgHeapNum":10000000,"maxMsgSize":1024,"msgRetentionSeconds":3600,"pollingWaitSeconds":10,"visibilityTimeout":10}
+
+[2018-10-04 20:35:53] [CMQ_python_sdk] [DEBUG] [cmq_client.py:182] [48428] SetQueueAttributes RequestId:587156807605551940 QueueName:MySampleQueue
