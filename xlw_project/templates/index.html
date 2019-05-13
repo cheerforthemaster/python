@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='show-img.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='transport.js')}}"></script>
+    <title>人脸表情识别</title>
+    <style>
+        body{text-align:center}
+    </style>
+    <style type="text/css">
+       .container{
+            position: absolute;
+            width:960px;
+            height:600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:#F5F5F5;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="top-header">
+        <h1>欢迎使用人脸表情识别服务</h1>
+    </div>
+    <div class="explanation" ;style="color:#2F4F4F">
+        <p>使用说明：请点击下方图标上传图片</p>
+        <p>上传完成后点击最下方“开始分析”按钮查看结果</p>
+    </div>
+    <div class="upload-box">
+        <div for="file" class="modal-content clearfix">
+            <label for="file">
+                <i></i>
+                <img src="{{url_for('static',filename='source/addpic.jpg')}}"
+                     height="300px" width="300px" id="avarimgs">
+            </label>
+
+            <input type="file" id="file" multiple="multiple" style="display:none" onchange="img_upload(this)" accept="image/*">
+
+        </div>
+        <div class="description" ;style="color:#2F4F4F">
+            <p>请选择图片上传：大小300*300像素支持JPG、PNG等格式</p>
+        </div>
+        <div class="footer">
+            <input type="button" value="开始分析" id="upload_button" onclick="getUpload()"></input>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

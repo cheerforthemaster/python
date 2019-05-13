@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>表情分析结果</title>
+    <style>
+        body{text-align:center}
+    </style>
+    <style type="text/css">
+        .container-left{
+            float:left;width:40%;height:100%;overflow:hidden;
+        }
+        .back-btn{
+            transform: translate(-40%,0);
+        }
+        .upload-pic{
+            transform: translate(0,30%);
+        }
+        .container-right{
+            float:left;width:60%;height:100%;overflow:hidden;background-color:#F5F5F5;
+        }
+        .header{
+            transform: translate(-30%, -50%);
+        }
+        .result-pic{
+            transform: translate(0, 0);
+        }
+        .text-box{
+            transform: translate(0, 0);
+            background-color:#F5F5FF;
+        }
+    </style>
+</head>
+<body>
+<div class="container1">
+    <div class="container-left">
+        <div class="back-btn">
+            <input type="button" value="返回" id="back-button" onclick="javascript:window.history.back(-1)"></input>
+        </div>
+        <div class="upload-pic">
+            <img src="/show" id="upload_picture" height="400px" width="400px">
+        </div>
+    </div>
+
+    <div class="container-right">
+        <div class="header" style="color:#2F4F4F">
+            <h2>分析结果：</h2>
+        </div>
+        <div class="result-pic">
+            <!--<img src="http://localhost/showTwo" id="result_pic1" height="300px" width="300px">-->
+            <img src="/showThree" id="result_pic2" height="400px" width="400px">
+        </div>
+        <div class="text-box" style="color:#2F4F4F">
+            <input type="text" id="result" value="" readonly="true" style="background:transparent;border:0;outline:none;font-size:26px;text-align:center;">
+            <script>
+                document.getElementById("result").value = sessionStorage["par1"];
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
